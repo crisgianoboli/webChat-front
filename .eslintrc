@@ -1,0 +1,26 @@
+{
+  "plugins": ["prettier", "sonarjs"],
+  "extends": [
+    "react-app",
+    "react-app/jest",
+    "prettier",
+    "prettier/react",
+    "plugin:sonarjs/recommended"
+  ],
+  "rules": {
+    "semi": ["error", "never"],
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "react/jsx-props-no-spreading": "off",
+    "prettier/prettier": [
+      "warn",
+      {
+        "semi": false,
+        "endOfLine": "auto"
+      }
+    ],
+    "no-param-reassign": [
+      "error",
+      { "ignorePropertyModificationsFor": ["state"] }
+    ]
+  }
+}
